@@ -7,10 +7,7 @@ const app = express();
 app.use(express.json());
 
 // database conncetion with mongoose
-mongoose.connect('mongodb://localhost/todos', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+mongoose.connect('mongodb://localhost/todos')
 .then(() => {
     console.log('connection successful');
 })
